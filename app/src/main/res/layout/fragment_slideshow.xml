@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.SlideshowFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="40dp"
+        android:layout_marginHorizontal="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Enter the words"
+                android:textSize="28sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/english"
+                app:cardElevation="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/green"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:id="@+id/englishWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:hint="Enter english words"
+                    android:inputType="textPersonName|textCapWords"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#4CAF50"
+                    android:textColorHint="#AECCC9"
+                    android:textColorLink="#FFFFFF"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/uzbek"
+                app:cardElevation="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/green"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+
+                    android:id="@+id/translateWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:hint="Enter translate words"
+                    android:inputType="textPersonName|textCapWords"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#4CAF50"
+                    android:textColorHint="#AECCC9"
+                    android:textColorLink="#FFFFFF"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/imgSave"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
